@@ -20,6 +20,4 @@ Route::get('/', function () {
 
 Route::get('/building', [BuildingController::class, 'building']);
 
-Route::get('/building/{room}', function ($room) {
-    return "部屋番号は" . $room . "です";
-});
+Route::get('/building/{room}', [BuildingController::class, 'room']);
