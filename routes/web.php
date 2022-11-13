@@ -17,11 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/building', function() {
+Route::get('/building', function () {
     return '建物です';
 });
 
-Route::get('/building/{room}', function($room) {
+Route::get('/building/{room}', function ($room) {
     return "部屋番号は" . $room . "です";
 });
