@@ -10,4 +10,9 @@ class BuildingController extends Controller
     {
         return "建物です";
     }
+
+    public function room($number)
+    {
+        return "部屋番号は" . $number . "です";
+    }
 }
